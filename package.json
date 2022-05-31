@@ -1,0 +1,19 @@
+{
+  "name": "scanword",
+  "version": "1.0.0",
+  "description": "Scanword",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Verbalman/scanword.git"
+  },
+  "author": "Oleg Kasianets",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Verbalman/scanword/issues"
+  },
+  "homepage": "https://github.com/Verbalman/scanword#readme"
+}
