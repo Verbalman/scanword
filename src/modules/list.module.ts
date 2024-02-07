@@ -13,7 +13,7 @@ export function ListModule(parentEl: HTMLElement | ChildNode): void {
 
   const render = (): void => {
     let res = '';
-    questionsArray.forEach((question) => res += `<li id="${question}">${question}-${Date.now()}</li>`);
+    questionsArray.forEach((question, index) => res += `<li id="${question}">${question}</li>`);
     const fragment = document.createRange().createContextualFragment(res);
     ulEl.replaceChildren(fragment);
   };

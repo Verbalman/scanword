@@ -5,7 +5,7 @@ export const lifeCycleObserving = (domNode: HTMLElement, config: any, callback?:
   }
 
   const observer = new MutationObserver(mutations => {
-    console.log('mutations =>', mutations);
+    // console.log('mutations =>', mutations);
     // mutations.forEach(function (mutation) {
     //   console.log(Array.from(mutation.addedNodes));
     //

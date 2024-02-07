@@ -3,6 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Scanword</title>
+    <link href="./favicon.ico" rel="icon">
+
+    <style>
+        .scanword * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .scanword-field .fieldset {
+            display: flex;
+        }
+
+        .scanword-field .fieldset input {
+            width: 32px;
+            height: 32px;
+            padding: 4px;
+            color: green;
+            font-size: 16px;
+            font-weight: bold;
+            font-family: inherit;
+            font-style: normal;
+            line-height: 16px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .scanword-field .fieldset input:invalid {
+            color: red;
+        }
+        .scanword-field .fieldset input:focus,
+        .scanword-field .fieldset input:active {
+            outline: none;
+            background-color: beige;
+        }
+        .scanword-field .fieldset:focus-within {
+            border: 5px solid firebrick;
+        }
+    </style>
 </head>
 <body>
 <div id="app"></div>
