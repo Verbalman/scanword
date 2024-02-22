@@ -1,5 +1,6 @@
-import { ListModule } from "./modules/list.module";
 import { FieldModule } from "./modules/field/field.module";
+import { ListModule } from "./modules/list/list.module";
+import { FieldState } from "./state/FieldState";
 
 function init () {
   const appEl = document.getElementById('app');
@@ -25,7 +26,7 @@ function init () {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  console.time('B');
+  console.time('SCANWORD');
   init();
-  console.timeEnd('B');
+  console.timeEnd('SCANWORD');
 });
