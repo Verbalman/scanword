@@ -4,13 +4,20 @@ export const FieldState: FieldStateI = {
   currentGroup: undefined,
   currentIndex: undefined,
   currentEl: undefined,
+  currentFieldKey: undefined,
+  answers: {},
 
   subscribers: [],
 
-  setState: function (group: HTMLInputElement[], index: number) {
+
+  setState: function (group: HTMLInputElement[], index: number, fieldKey?: string) {
     this.currentGroup = group;
     this.currentIndex = index;
     this.currentEl = group[index];
+
+    if (fieldKey) {
+      this.currentFieldKey = fieldKey;
+    }
 
     this.subscribers.forEach((fn) => fn());
   },
@@ -21,6 +28,10 @@ export const FieldState: FieldStateI = {
     this.currentEl = undefined;
 
     this.subscribers.forEach((fn) => fn());
+  },
+
+  setAnswers: function (list) {
+    this.answers = list;
   },
 
   subscribe: function (calback: any) {

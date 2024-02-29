@@ -1,7 +1,6 @@
 export interface FieldsetListI {
   [key: string]: {
     classList: string;
-    answer: string;
     left: number;
     top: number;
     number: number;
